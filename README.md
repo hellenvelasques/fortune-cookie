@@ -15,6 +15,6 @@ O projeto consiste em sortear e mostrar uma "frase da sorte", no qual o usuário
 ## Tecnologias
 - HTML
 - CSS
-- JavaScripta
+- JavaScript
 
 Projeto criado a partir de um desafio do Stage05 do Explorer da Rocketseat.
