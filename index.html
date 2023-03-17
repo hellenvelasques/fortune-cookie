@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img/fortune-closed-cookie.png" type="image/x-icon">
+  <title>Fortune Cookie Game</title>
+</head>
+<body>
+  <main>
+    <div class="background">
+      <div class="screenBeforePressingButton">
+        <h1>Qual a sua sorte de hoje?</h1>
+        <p>Clique no biscoito e descubra!</p>
+        <div class="image">
+          <img id="btnOpenCookie" src="./img/fortune-closed-cookie.png" alt="Ilustrção biscoito da sorte fechado">
+        </div>
+      </div>
+
+      <div class="screenAfterPressingButton hide">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <div class="messages">
+          <p id="luckyPhrase"></p>
+        </div>
+        <div class="image">
+          <img src="./img/fortune-opened-cookie.png" alt="Ilustrção biscoito da sorte aberto">
+        </div>
+        <button id="btnOpenAnotherCookie">
+          Abrir outro biscoito
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+  <img class="imgBackgrounBody" src="./img/img-background.jpg" alt="">
+</body>
+</html>

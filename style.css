@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  border: none;
+}
+
+:root {
+   font-size: 62.5%; /*1rem = 16px*/
+}
+
+body {
+  background: linear-gradient(68deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  color: #fcfcfd;
+
+  animation: gradient 7s ease infinite;
+  background-size: 200% 200%;
+}
+
+.imgBackgrounBody {
+  opacity: .6;
+  position: fixed;
+}
+
+@keyframes gradient {
+	0% { background-position: 0% 70%; }
+	50% { background-position: 100% 30%; }
+	100% { background-position: 0% 50%; }
+}
+
+.hide {
+  display: none !important;
+}
+
+main {
+  background: rgba(60, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 4.8rem 6.4rem 6.4rem;
+ 
+  margin-top: -2rem;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  position: relative;
+
+  z-index: 1;
+}
+
+.screenBeforePressingButton, .screenAfterPressingButton {
+  width: 300px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.image {
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Before Screen */
+.screenBeforePressingButton p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  margin: 1.4rem 0 2rem;
+}
+
+.screenBeforePressingButton {
+  cursor: pointer;
+}
+
+.screenBeforePressingButton img:hover {
+  animation: shake 0.7s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* After Screen */
+.screenAfterPressingButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.messages {
+  background: #fae6ca;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+
+  transform: translateY(17rem) scale(0.1);
+  animation: down-up 1.7s ease forwards;
+}
+
+@keyframes down-up {
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.screenAfterPressingButton p {
+  font-family: 'Dancing Script', cursive;
+  color: #000;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  animation: growing-message 0.5s ease forwards;
+}
+
+button {
+  background: #e44923;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+  width: 17.4rem;
+  height: 5.2rem;
+}
